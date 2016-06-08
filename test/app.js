@@ -9,13 +9,6 @@ describe('generator-kapgel-base:app with default params', function () {
       .toPromise();
   });
 
-  it('creates folders', function () {
-    assert.directory([
-      'lib',
-      'test'
-    ]);
-  });
-
   it('creates files', function () {
     assert.file([
       '.editorconfig',
