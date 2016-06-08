@@ -52,12 +52,22 @@ module.exports = yeoman.Base.extend({
   },
 
   writing: function () {
-    this.copy('.editorconfig');
-    this.copy('.eslintrc');
-    this.copy('.gitignore');
-    this.copy('.npmignore');
-    this.copy('.travis.yml');
     this.copy('index.js');
+    this.fs.copyTpl(
+      this.templatePath('_editorconfig'),
+      this.destinationPath('.editorconfig'));
+    this.fs.copyTpl(
+      this.templatePath('_eslintrc'),
+      this.destinationPath('.eslintrc'));
+    this.fs.copyTpl(
+      this.templatePath('_gitignore'),
+      this.destinationPath('.gitignore'));
+    this.fs.copyTpl(
+      this.templatePath('_npmignore'),
+      this.destinationPath('.npmignore'));
+    this.fs.copyTpl(
+      this.templatePath('_travis.yml'),
+      this.destinationPath('.travis.yml'));
     this.fs.copyTpl(
       this.templatePath('package.json'),
       this.destinationPath('package.json'),
