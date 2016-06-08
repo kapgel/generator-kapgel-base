@@ -1,4 +1,8 @@
-# generator-kapgel-base [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url] [![Coverage percentage][coveralls-image]][coveralls-url]
+# generator-kapgel-base 
+[![NPM version][npm-image]][npm-url] 
+[![Build Status][travis-image]][travis-url] 
+[![Dependency Status][daviddm-image]][daviddm-url] 
+[![Coverage percentage][coveralls-image]][coveralls-url]
 > Base project template for all KapGel projects
 
 ## Installation

@@ -11,4 +11,4 @@
 
 # <%= appTitle %>
 
-<%= appDescription %>
+> <%= appDescription %>
